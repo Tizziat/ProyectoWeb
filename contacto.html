@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Refugio...... - Contacto</title>
+  <title>Refugio Huellitas - Contacto</title>
   <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 <body>
@@ -21,18 +21,51 @@
       </ul>
     </nav>
   </header>
+  
+  
   <main>
     <section class="seccion-contacto">
       <h2>Formulario de Adopción y Contacto</h2>
-      <p>(mensaje para donacion)</p>
+      <p>Completa tus datos si deseas adoptar a alguna de nuestras mascotas, realizar una donación o sumarte a nuestro equipo de voluntarios.</p>
 
       <!-- aca va un formulario -->
+       <form id="form-contacto" novalidate>
+        
+        <div class="formulario">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre">
+          <span class="mensaje-error" id="error-nombre"></span>
+        </div>
+
+        <div class="formulario">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email">
+          <span class="mensaje-error" id="error-email"></span>
+        </div>
+
+        <div class="formulario">
+          <label for="telefono">Teléfono de contacto:</label>
+          <input type="text" id="telefono" name="telefono">
+          <span class="mensaje-error" id="error-telefono"></span>
+        </div>
+
+        <div class="formulario">
+          <label for="motivo">Motivo de consulta:</label>
+          <select id="motivo" name="motivo">
+            <option value="Adopción">Quiero adoptar</option>
+            <option value="Donación">Quiero hacer una donación</option>
+            <option value="Voluntariado">Quiero ser voluntario</option>
+          </select>
+        </div>
+
+        <button type="submit">Enviar Solicitud</button>
+      </form>
 
     </section>
   </main>
-    <hr>
+    
   <footer>
-    <p>Trabajo Final Integrador(pie de pagina)</p>
+    <p>&copy; Refugio Huellitas - Trabajo Final Integrador</p>
   </footer>
 
 </body>
