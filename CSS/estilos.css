@@ -50,3 +50,24 @@ body{
     height: 65px;
     object-fit: cover;
 }
+
+/* css adopciones */
+
+.cat-adopcion {
+    margin-bottom: 40px;
+}
+
+.titulo-categoria {
+    background-color: #C8905B;
+    width: fit-content; 
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.grilla-perros {
+    flex: auto;
+    background-color: #5C3D26;
+    padding: 15px;
+    border-radius: 10px;
+}
