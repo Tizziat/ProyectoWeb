@@ -195,3 +195,85 @@ footer {
     margin-top: 40px;       
     box-sizing: border-box;
 }
+/* css del formulario */
+
+#form-contacto {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #3E2B20;
+    border: 2px solid #C8905B;
+    border-radius: 12px;   
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.formulario label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 5px;
+}
+
+.formulario input[type="text"],.formulario input[type="email"],.formulario select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #C8905B;
+    border-radius: 10px;
+    background-color: #52392b;
+    color: #fcfafa;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+/* css del boto enviar solicitud */
+
+.seccion-contacto button[type="submit"]{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #C8905B;
+    color: #050505;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.mensaje-error{
+    color: red;
+}
+
+
+/* css del envio */
+
+#resumen-envio {
+    margin-top: 25px;
+}
+
+.tarjeta-resumen {
+    background-color: #3E2B20;
+    border: 2px solid #C8905B;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tarjeta-resumen h3 {
+    color: #C8905B;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.tarjeta-resumen p {
+    margin: 8px 0;
+    color: #F4F0E6;
+}
+
+.mensaje-exito {
+    color: #A8E6CF;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
