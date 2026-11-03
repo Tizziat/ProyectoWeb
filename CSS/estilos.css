@@ -68,7 +68,7 @@ body{
 /* grilla completa para cada categoria de perros (cachorro, adulto, anciano) */
 .grilla-perros {
     flex: auto;
-    background-color: #3E2B20;
+    background-color: #52392b;
     padding: 15px;
     border-radius: 10px;
 }
@@ -91,9 +91,10 @@ body{
     border-radius: 10px;
 }
 
+/* carrusel de imagenes /////////////////////////////////////// */
 .seccion-carrusel {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 .carrusel-contenedor {
@@ -126,6 +127,66 @@ body{
     background-color: #F4F0E6;
 }
 
+/* seccion bienvenida y descripcion del refugio ////////////////////// */
 .bienvenida h2 {
     text-align: center;
+    color: #F4F0E6;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.bienvenida p {
+    background-color: #52392b;
+    text-align: center;
+    border-radius: 10px;
+    padding: 80px 150px;
+    max-width: 650px;
+    margin: 0 auto;
+    
+    font-size: 1.3rem;           
+    line-height: 1.6;              
+    font-weight: 500;
+}
+
+/* css de la seccion ayuda(adopta, sona, se voluntario) */
+
+.seccion-ayuda {
+    text-align: center;
+    margin: 100px;
+
+}
+
+.seccion-ayuda h2 {
+    margin-bottom: 100px;
+}
+
+.grilla-ayuda {
+  display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card-ayuda {
+    flex: 1 1;
+    background-color: #3E2B20;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card-ayuda h3 {
+    margin-top: 0;
+    font-size: 1.3rem; 
+}
+
+/* footer del mismo color que el header para dar una mejor estetica visual */
+footer {
+    background-color: #4A2F1D; 
+    color: #F4F0E6;          
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 40px;       
+    box-sizing: border-box;
 }
