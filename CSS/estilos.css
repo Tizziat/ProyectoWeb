@@ -38,6 +38,11 @@ body{
     font-weight: bold;
 }
 
+.menu-navegacion a.activo {
+    color: #e77f39;
+    border-bottom: 2px solid; 
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -114,15 +119,16 @@ body{
     text-align: center;
 }
 
-.btn-carrusel {
+.btn-carrusel, .btn-enlace {
     background-color: #C8905B;
     color: #4A2F1D;
     border: 3px solid #4A2F1D;
     padding: 8px 20px;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.btn-carrusel:hover {
+.btn-carrusel:hover, .btn-enlace:hover {
     background-color: #F4F0E6;
 }
 
@@ -160,7 +166,7 @@ body{
 }
 
 .grilla-ayuda {
-  display: flex;
+    display: flex;
     gap: 25px;
     flex-wrap: wrap;
 }
