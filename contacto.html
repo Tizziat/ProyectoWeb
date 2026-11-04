@@ -29,7 +29,7 @@
       <p>Completa tus datos si deseas adoptar a alguna de nuestras mascotas, realizar una donación o sumarte a nuestro equipo de voluntarios.</p>
 
       <!-- aca va un formulario -->
-       <form id="form-contacto" novalidate>
+      <form id="form-contacto" novalidate>
         
         <div class="formulario">
           <label for="nombre">Nombre completo:</label>
@@ -52,10 +52,12 @@
         <div class="formulario">
           <label for="motivo">Motivo de consulta:</label>
           <select id="motivo" name="motivo">
+            <option value="">Seleccione un motivo</option>
             <option value="Adopción">Quiero adoptar</option>
             <option value="Donación">Quiero hacer una donación</option>
             <option value="Voluntariado">Quiero ser voluntario</option>
           </select>
+          <span class="mensaje-error" id="error-motivo""></span>
         </div>
 
         <button type="submit">Enviar Solicitud</button>
