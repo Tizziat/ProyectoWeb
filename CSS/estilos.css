@@ -1,3 +1,5 @@
+/* ESTRUCTURA */
+
 body{
     background-image: url('../Imagenes/fondo-patitas.jpg');
     color: #F4F0E6;
@@ -55,47 +57,39 @@ body{
     object-fit: cover;
 }
 
-/* css adopciones */
-
-.cat-adopcion {
-    margin-bottom: 40px;
+/* footer del mismo color que el header para dar una mejor estetica visual */
+footer {
+    background-color: #4A2F1D; 
+    color: #F4F0E6;          
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 40px;       
+    box-sizing: border-box;
 }
 
-.titulo-categoria {
-    background-color: beige;
-    color: #3E2B20;
-    width: fit-content; 
-    padding: 5px 15px;
-    border-radius: 5px;
+
+/*INICIO*/
+.bienvenida h2 {
+    text-align: center;
+    color: #F4F0E6;
+    font-size: 3rem;
     margin-bottom: 15px;
 }
-/* grilla completa para cada categoria de perros (cachorro, adulto, anciano) */
-.grilla-perros {
-    flex: auto;
+
+.bienvenida p {
     background-color: #52392b;
-    padding: 15px;
+    text-align: center;
     border-radius: 10px;
+    padding: 80px 150px;
+    max-width: 650px;
+    margin: 0 auto;
+    
+    font-size: 1.3rem;           
+    line-height: 1.6;              
+    font-weight: 500;
 }
 
-/* flexbox para cada section de perros */
-.galeria-perro {
-    display: flex;
-    flex-direction: row; 
-    gap: 10px;           
-    margin-top: 12px;
-    margin-bottom: 12px;  
-}
-/* ajustes para las imagenes del flexbox*/
-.galeria-perro img {
-    flex: 1;
-    width: 100%;
-    height: 220px;          
-    object-fit: contain;    
-    background-color: #1A1412; 
-    border-radius: 10px;
-}
-
-/* carrusel de imagenes /////////////////////////////////////// */
+/* carrusel de imagenes*/
 .seccion-carrusel {
     text-align: center;
     margin-top: 100px;
@@ -132,29 +126,7 @@ body{
     background-color: #F4F0E6;
 }
 
-/* seccion bienvenida y descripcion del refugio ////////////////////// */
-.bienvenida h2 {
-    text-align: center;
-    color: #F4F0E6;
-    font-size: 3rem;
-    margin-bottom: 15px;
-}
-
-.bienvenida p {
-    background-color: #52392b;
-    text-align: center;
-    border-radius: 10px;
-    padding: 80px 150px;
-    max-width: 650px;
-    margin: 0 auto;
-    
-    font-size: 1.3rem;           
-    line-height: 1.6;              
-    font-weight: 500;
-}
-
 /* css de la seccion ayuda(adopta, sona, se voluntario) */
-
 .seccion-ayuda {
     text-align: center;
     margin: 100px;
@@ -186,17 +158,59 @@ body{
     font-size: 1.3rem; 
 }
 
-/* footer del mismo color que el header para dar una mejor estetica visual */
-footer {
-    background-color: #4A2F1D; 
-    color: #F4F0E6;          
-    text-align: center;
-    padding: 15px 20px;
-    margin-top: 40px;       
+
+/* ADOPCIÓN */
+.cat-adopcion {
+    margin-bottom: 40px;
+}
+
+.titulo-categoria {
+    background-color: beige;
+    color: #3E2B20;
+    width: fit-content; 
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* grilla completa para cada categoria de perros (cachorro, adulto, anciano) */
+.grilla-perros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #52392b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.columna-card {
+    flex: 1 1 calc(33.333% - 20px); /* 3 columnas en escritorio */
+    background-color: #3E2B20;
+    padding: 15px;
+    border-radius: 8px;
     box-sizing: border-box;
 }
-/* css del formulario */
 
+/* flexbox para cada section de perros */
+.galeria-perro {
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;           
+    margin-top: 12px;
+    margin-bottom: 12px;  
+}
+
+/* ajustes para las imagenes del flexbox*/
+.galeria-perro img {
+    flex: 1;
+    width: 100%;
+    height: 220px;          
+    object-fit: contain;    
+    background-color: #1A1412; 
+    border-radius: 10px;
+}
+
+/* FORMULARIO */
 #form-contacto {
     max-width: 600px;
     margin: 30px auto;
@@ -228,8 +242,8 @@ footer {
     font-size: 1rem;
     box-sizing: border-box;
 }
-/* css del boto enviar solicitud */
 
+/* css del boton enviar solicitud */
 .seccion-contacto button[type="submit"]{
     width: 100%;
     margin-top: 15px;
@@ -246,9 +260,7 @@ footer {
     color: red;
 }
 
-
 /* css del envio */
-
 #resumen-envio {
     margin-top: 25px;
 }
@@ -276,4 +288,3 @@ footer {
     font-weight: bold;
     margin-top: 15px;
 }
-
