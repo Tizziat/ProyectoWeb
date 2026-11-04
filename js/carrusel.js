@@ -1,4 +1,4 @@
-const imagenes = [ "Imagenes/familia.jpg","Imagenes/milton-carrusel2.webp", "Imagenes/perros.jpg", "Imagenes/vacunacion.jpg"];
+const imagenes = [ "Imagenes/jauria1.jpg","Imagenes/cachorro1.jpg", "Imagenes/adulto1.jpg", "Imagenes/cachorro2.jpg", "Imagenes/adulto2.jpg", "Imagenes/cachorro3.jpg", "Imagenes/cachorros-jugando.jpg"];
 
 let indiceActual = 0;
 
